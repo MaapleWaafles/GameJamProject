@@ -2,12 +2,16 @@ sceneSetups:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - path: Assets/Scenes/MainMenu.unity
 =======
 - path: Assets/Scenes/MainScene.unity
 >>>>>>> Stashed changes
 =======
 - path: Assets/Scenes/TestWinDeath.unity
+>>>>>>> Stashed changes
+=======
+- path: Assets/Scenes/UITestScene.unity
 >>>>>>> Stashed changes
 =======
 - path: Assets/Scenes/UITestScene.unity

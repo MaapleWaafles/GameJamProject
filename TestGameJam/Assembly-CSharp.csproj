@@ -69,6 +69,7 @@
     <None Include="Assets\XInputDotNet\MITLicense.txt" />
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <HintPath>C:/Users/s181714/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
@@ -88,6 +89,27 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/s181714/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+=======
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+>>>>>>> Stashed changes
 =======
       <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
@@ -310,6 +332,7 @@
     </Reference>
     <Reference Include="XInputDotNetPure">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <HintPath>C:/Users/s181714/Desktop/GameJamProject/TestGameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
@@ -333,6 +356,8 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/s181714/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
 =======
+=======
+>>>>>>> Stashed changes
       <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
@@ -355,6 +380,9 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/s181311/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </Reference>
     <Reference Include="mscorlib">
