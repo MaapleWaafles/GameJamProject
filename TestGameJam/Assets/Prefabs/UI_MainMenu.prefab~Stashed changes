@@ -443,9 +443,15 @@ Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< Updated upstream:TestGameJam/Assets/Prefabs/UI_MainMenu.prefab~Stashed changes
   m_GameObject: {fileID: 1885435780944142}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 1.3}
+=======
+  m_GameObject: {fileID: 1139074745212442}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -5.55, y: 0.31, z: -14.8}
+>>>>>>> Stashed changes:TestGameJam/Assets/Particles/FireParticle_001.prefab
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4741695253028056}
