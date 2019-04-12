@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
         m_fistStartPos = new Vector3[2];
         for (int i = 0; i < 2; i++)
         {
+            // ignore collision to fists
+            Physics.IgnoreCollision(GetComponent<Collider>(), m_fists[i].GetComponent<Collider>(), true);
             m_fistStartPos[i] = m_fists[i].transform.localPosition;
         }
     }
@@ -135,8 +137,7 @@ public class PlayerController : MonoBehaviour
     {
         // if hit by punching enemy fist
         if (collision.gameObject.CompareTag("Fist")
-            && collision.gameObject.GetComponentInParent<PlayerController>().m_bPunching
-            && !m_fists.Contains(collision.gameObject))
+            && collision.gameObject.GetComponentInParent<PlayerController>().m_bPunching)
         {
             // calculate force
             float fForce = m_baseKnockbackForce + (m_knockbackForce * (m_fDamagePercent / 100f));
