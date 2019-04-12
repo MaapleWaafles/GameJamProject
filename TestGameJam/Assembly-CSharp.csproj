@@ -69,7 +69,11 @@
     <Compile Include="Assets\Scripts\Event_Spikes.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\WinGameScreen.cs" />
+=======
+    <Compile Include="Assets\Scripts\PlayerCountSingleton.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
     <None Include="Assets\XInputDotNet\Docs.txt" />
     <None Include="Assets\XInputDotNet\MITLicense.txt" />
