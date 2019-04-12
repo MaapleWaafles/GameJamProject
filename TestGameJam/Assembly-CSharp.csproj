@@ -77,6 +77,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
@@ -100,6 +101,9 @@
 =======
 >>>>>>> Stashed changes
       <HintPath>C:/Users/s181330/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+=======
+      <HintPath>C:/Users/s173004/Desktop/GitKraken/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+>>>>>>> Stashed changes
 =======
       <HintPath>C:/Users/s173004/Desktop/GitKraken/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
 >>>>>>> Stashed changes
@@ -324,6 +328,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
 =======
 =======
@@ -354,6 +359,30 @@
       <HintPath>C:/Users/s181311/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
 =======
       <HintPath>C:/Users/s181330/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+=======
+      <HintPath>C:/Users/s173004/Desktop/GitKraken/GameJamProject/TestGameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/s173004/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderCore">
+      <HintPath>C:/Users/s173004/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderMeshOps">
+      <HintPath>C:/Users/s173004/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll</HintPath>
+    </Reference>
+    <Reference Include="KdTreeLib">
+      <HintPath>C:/Users/s173004/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="pb_Stl">
+      <HintPath>C:/Users/s173004/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Poly2Tri">
+      <HintPath>C:/Users/s173004/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/s173004/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+>>>>>>> Stashed changes
 =======
       <HintPath>C:/Users/s173004/Desktop/GitKraken/GameJamProject/TestGameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
     </Reference>

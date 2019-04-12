@@ -147,7 +147,10 @@ public class PlayerController : MonoBehaviour
             float fForce = m_baseKnockbackForce + (m_knockbackForce * (m_fDamagePercent / 100f));
             // apply force
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
             //Display Force on UI
             if (m_player1.GetComponentInParent<PlayerController>().m_bPunching == true)
