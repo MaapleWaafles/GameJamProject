@@ -5,6 +5,7 @@ sceneSetups:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - path: Assets/Scenes/MainMenu.unity
 =======
 - path: Assets/Scenes/MainScene.unity
@@ -20,6 +21,9 @@ sceneSetups:
 >>>>>>> Stashed changes
 =======
 - path: Assets/Scenes/MainScene.unity
+>>>>>>> Stashed changes
+=======
+- path: Assets/Scenes/MainMenu_Drue.unity
 >>>>>>> Stashed changes
 =======
 - path: Assets/Scenes/MainMenu_Drue.unity
