@@ -8,6 +8,7 @@ sceneSetups:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - path: Assets/Scenes/MainMenu.unity
 =======
 - path: Assets/Scenes/MainScene.unity
@@ -35,6 +36,9 @@ sceneSetups:
 >>>>>>> Stashed changes
 =======
 - path: Assets/Scenes/TestWinDeath.unity
+>>>>>>> Stashed changes
+=======
+- path: Assets/Scenes/TestEventsScene.unity
 >>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1

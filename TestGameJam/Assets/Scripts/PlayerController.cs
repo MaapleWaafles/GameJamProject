@@ -146,6 +146,20 @@ public class PlayerController : MonoBehaviour
             // calculate force
             float fForce = m_baseKnockbackForce + (m_knockbackForce * (m_fDamagePercent / 100f));
             // apply force
+<<<<<<< Updated upstream
+=======
+
+            //Display Force on UI
+            if (m_player1.GetComponentInParent<PlayerController>().m_bPunching == true)
+            {
+                m_playerOnePercent.text = fForce.ToString();
+            }
+            if (m_player2.GetComponentInParent<PlayerController>().m_bPunching == true)
+            {
+                m_playerTwoPercent.text = fForce.ToString();
+            }
+
+>>>>>>> Stashed changes
             m_rigidbody.AddExplosionForce(fForce, collision.transform.position, 10f);
             m_rigidbody.AddExplosionForce(fForce, collision.contacts[0].point, 10f);
             m_fDamagePercent += fForce * m_forceToDamageFactor; // add damage
