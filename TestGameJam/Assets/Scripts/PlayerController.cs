@@ -13,12 +13,15 @@ public class PlayerController : MonoBehaviour
     public float m_thumbstickDeadzone = 0.15f;
     public float m_punchCooldownTime = 0.2f;
     public float m_punchDistance = 2f;
-    public float m_startPunchSpeed = 0.1f;
     public float m_punchSpeedOverTimeMultiplier = 2f;
     public float m_slowdownWhenPunch = 0.2f;
     public float m_baseKnockbackForce = 500f;
     public float m_knockbackForce = 3000f;
     public float m_forceToDamageFactor = 0.01f;
+    public float m_fHittingVibrationStrength = 0.5f;
+    public float m_fHittingVibrationTime = 0.1f;
+    public float m_fHitVibrationStrength = 1f;
+    public float m_fHitVibrationTime = 0.5f;
     public List<GameObject> m_fists;
 
     [HideInInspector]
@@ -29,7 +32,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody m_rigidbody;
     private Vector3[] m_fistStartPos;
     private float m_fCurrentPunchCooldown = 0f;
-    private float m_fCurrentPunchSpeed;
+    private float m_fCurrentPunchSpeed = 0f;
+    private float m_fVibrationTimer = 0f;
     // 0 = left, 1 = right
     private int m_iFist = 0;
     [HideInInspector]
@@ -40,7 +44,6 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        m_fCurrentPunchSpeed = m_startPunchSpeed;
         m_rigidbody = GetComponent<Rigidbody>();
         m_fistStartPos = new Vector3[2];
         for (int i = 0; i < 2; i++)
@@ -67,7 +70,7 @@ public class PlayerController : MonoBehaviour
         // jump
         if (gamePadState.Buttons.A == ButtonState.Pressed
             || gamePadState.Triggers.Left > 0f)
-            if (Physics.Raycast(transform.position, Vector3.down, 1f))
+            if (Physics.Raycast(transform.position, Vector3.down, 1.5f))
                 v3Velocity.y = m_jumpVelocity;
         // set new velocity
         m_rigidbody.velocity = v3Velocity;
@@ -96,7 +99,7 @@ public class PlayerController : MonoBehaviour
         {
             m_bPunching = false; // stop punching
             m_fCurrentPunchCooldown = m_punchCooldownTime; // set cooldown
-            m_fCurrentPunchSpeed = m_startPunchSpeed;
+            m_fCurrentPunchSpeed = 0;
             // change fist index
             switch (m_iFist)
             {
@@ -115,6 +118,12 @@ public class PlayerController : MonoBehaviour
         {
             m_fCurrentPunchCooldown -= Time.deltaTime;
         }
+
+        m_fVibrationTimer -= Time.deltaTime;
+        if (m_fVibrationTimer <= 0f)
+        {
+            GamePad.SetVibration((PlayerIndex)m_playerNumber - 1, 0f, 0f);
+        }
     }
 
     // returns false when punch has ended
@@ -122,19 +131,28 @@ public class PlayerController : MonoBehaviour
     private bool Punch(int iFist)
     {
         // move fist
-        Vector3 v3FistPos = m_fists[iFist].transform.localPosition;
-        Vector3 v3PunchEndPos = m_fistStartPos[iFist] + new Vector3(0, 0, m_punchDistance);
-        v3FistPos = Vector3.Lerp(v3FistPos, v3PunchEndPos, m_fCurrentPunchSpeed);
+        m_fists[iFist].GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(1, Mathf.Lerp(0, 100, m_fCurrentPunchSpeed));
         m_fCurrentPunchSpeed += Time.deltaTime * m_punchSpeedOverTimeMultiplier;
-        m_fists[iFist].transform.localPosition = v3FistPos;
 
-        if (Vector3.Distance(v3FistPos, v3PunchEndPos) < 0.1f)
+        // i cannot stress how terrible this workaround is to match the collider to the boxing glove, but im running out of time!!
+        float fTravelled = m_fists[iFist].GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(1) / 100;
+        m_fists[iFist].GetComponent<SphereCollider>().center = new Vector3(13.63f + (20f * fTravelled), 6.2f, 46.35f + (213.65f * fTravelled));
+        m_fists[iFist].GetComponent<SphereCollider>().radius = 34.6f + (15 * fTravelled);
+
+        if (m_fists[iFist].GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(1) >= 100f)
         {
-            // reset position
-            m_fists[iFist].transform.localPosition = m_fistStartPos[iFist];
+            m_fists[iFist].GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(1, 0);
+            m_fists[iFist].GetComponent<SphereCollider>().center = new Vector3(13.63f, 6.2f, 46.35f);
+            m_fists[iFist].GetComponent<SphereCollider>().radius = 34.6f;
             return false;
         }
         return true;
+    }
+
+    public void Vibrate(float fVibrateStrength, float fVibrateTime)
+    {
+        GamePad.SetVibration((PlayerIndex)m_playerNumber - 1, fVibrateStrength, fVibrateStrength);
+        m_fVibrationTimer = fVibrateTime;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -148,6 +166,8 @@ public class PlayerController : MonoBehaviour
             // apply force
             m_rigidbody.AddExplosionForce(fForce, collision.transform.position, 10f);
             m_rigidbody.AddExplosionForce(fForce, collision.contacts[0].point, 10f);
+            collision.gameObject.GetComponentInParent<PlayerController>().Vibrate(m_fHittingVibrationStrength, m_fHittingVibrationTime);
+            Vibrate(m_fHitVibrationStrength, m_fHitVibrationTime);
             m_fDamagePercent += fForce * m_forceToDamageFactor; // add damage
         }
     }
