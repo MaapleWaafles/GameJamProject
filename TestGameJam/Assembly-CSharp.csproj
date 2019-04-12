@@ -70,6 +70,7 @@
     <None Include="Assets\XInputDotNet\MITLicense.txt" />
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
@@ -90,6 +91,8 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
 =======
+=======
+>>>>>>> Stashed changes
       <HintPath>C:/Users/s181330/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
@@ -109,7 +112,6 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/s181330/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
->>>>>>> Stashed changes
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity 2018.2.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -311,8 +313,11 @@
     </Reference>
     <Reference Include="XInputDotNetPure">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
 =======
+=======
+>>>>>>> Stashed changes
       <HintPath>C:/Users/s181330/Desktop/GameJamProject/TestGameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
 >>>>>>> Stashed changes
     </Reference>
@@ -339,7 +344,6 @@
       <HintPath>C:/Users/s181311/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
 =======
       <HintPath>C:/Users/s181330/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
->>>>>>> Stashed changes
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity 2018.2.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
