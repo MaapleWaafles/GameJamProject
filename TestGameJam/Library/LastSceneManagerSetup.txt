@@ -1,9 +1,14 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 sceneSetups: []
 =======
 sceneSetups:
 - path: Assets/Scenes/JAKOBIInputTest.unity
+=======
+sceneSetups:
+- path: Assets/Scenes/MainMenu_Drue.unity
+>>>>>>> Stashed changes
 =======
 sceneSetups:
 - path: Assets/Scenes/MainMenu_Drue.unity
