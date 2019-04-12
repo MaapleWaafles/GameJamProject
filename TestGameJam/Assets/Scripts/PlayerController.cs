@@ -149,9 +149,22 @@ public class PlayerController : MonoBehaviour
         return true;
     }
 
-    public void Vibrate(float fVibrateStrength, float fVibrateTime)
+    public void Vibrate(float fVibrateStrength, float fVibrateTime, bool bHitting = false)
     {
-        GamePad.SetVibration((PlayerIndex)m_playerNumber - 1, fVibrateStrength, fVibrateStrength);
+        if (!bHitting)
+            GamePad.SetVibration((PlayerIndex)m_playerNumber - 1, fVibrateStrength, fVibrateStrength);
+        else
+        {
+            switch (m_iFist)
+            {
+                case 0:
+                    GamePad.SetVibration((PlayerIndex)m_playerNumber - 1, 0, fVibrateStrength);
+                    break;
+                case 1:
+                    GamePad.SetVibration((PlayerIndex)m_playerNumber - 1, fVibrateStrength, 0);
+                    break;
+            }
+        }
         m_fVibrationTimer = fVibrateTime;
     }
 
