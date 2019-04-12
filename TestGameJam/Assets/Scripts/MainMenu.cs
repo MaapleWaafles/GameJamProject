@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public Button startButton;
+    public GameObject mainMenu;
+    public GameObject playerJoin;
 
     private void Awake()
     {
@@ -15,8 +17,9 @@ public class MainMenu : MonoBehaviour
 
     public void StartButton()
     {
-        // load game scene
-        SceneManager.LoadScene(1);
+        // display player join screen
+        mainMenu.SetActive(false);
+        playerJoin.SetActive(true);
     }
 
     public void QuitButton()
@@ -24,4 +27,4 @@ public class MainMenu : MonoBehaviour
         // quit application
         Application.Quit();
     }
-} //TEST YPIOIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+}

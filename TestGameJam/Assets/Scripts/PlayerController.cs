@@ -32,6 +32,10 @@ public class PlayerController : MonoBehaviour
     private float m_fCurrentPunchSpeed;
     // 0 = left, 1 = right
     private int m_iFist = 0;
+    [HideInInspector]
+    public uint m_health = 3;
+    [HideInInspector]
+    public bool isAlive = true;
 
     // Use this for initialization
     void Start()
