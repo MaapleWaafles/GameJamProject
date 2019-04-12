@@ -21,12 +21,6 @@ public class PlayerController : MonoBehaviour
     public float m_forceToDamageFactor = 0.01f;
     public List<GameObject> m_fists;
 
-    //UI Stuff
-    public Text m_playerOnePercent;
-    public Text m_playerTwoPercent;
-    public GameObject m_player1;
-    public GameObject m_player2;
-
     [HideInInspector]
     public bool m_bPunching = false;
     [HideInInspector]
@@ -123,7 +117,7 @@ public class PlayerController : MonoBehaviour
     {
         // move fist
         Vector3 v3FistPos = m_fists[iFist].transform.localPosition;
-        Vector3 v3PunchEndPos = new Vector3(0, m_fistStartPos[iFist].y, m_fistStartPos[iFist].z) + new Vector3(0, 0, m_punchDistance);
+        Vector3 v3PunchEndPos = m_fistStartPos[iFist] + new Vector3(0, 0, m_punchDistance);
         v3FistPos = Vector3.Lerp(v3FistPos, v3PunchEndPos, m_fCurrentPunchSpeed);
         m_fCurrentPunchSpeed += Time.deltaTime * m_punchSpeedOverTimeMultiplier;
         m_fists[iFist].transform.localPosition = v3FistPos;
@@ -147,22 +141,8 @@ public class PlayerController : MonoBehaviour
             // calculate force
             float fForce = m_baseKnockbackForce + (m_knockbackForce * (m_fDamagePercent / 100f));
             // apply force
-<<<<<<< HEAD
-
-            //Display Force on UI
-            if (m_player1.GetComponentInParent<PlayerController>().m_bPunching == true)
-            {
-                m_playerOnePercent.text = fForce.ToString();
-            }
-            if (m_player2.GetComponentInParent<PlayerController>().m_bPunching == true)
-            {
-                m_playerTwoPercent.text = fForce.ToString();
-            }
-
             m_rigidbody.AddExplosionForce(fForce, collision.transform.position, 10f);
-=======
             m_rigidbody.AddExplosionForce(fForce, collision.contacts[0].point, 10f);
->>>>>>> master
             m_fDamagePercent += fForce * m_forceToDamageFactor; // add damage
         }
     }
