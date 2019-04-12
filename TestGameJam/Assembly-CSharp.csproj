@@ -131,27 +131,30 @@
     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
     <None Include="Assets\XInputDotNet\MITLicense.txt" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <None Include="Assets\Particles\Spike\Glow.shader" />
+=======
+>>>>>>> Stashed changes
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-<<<<<<< HEAD
-      <HintPath>C:/Users/s181301/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
-      <HintPath>C:/Users/s181301/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>C:/Users/s181301/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/s181301/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/s181301/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/s181301/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
+<<<<<<< Updated upstream
       <HintPath>C:/Users/s181301/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
 =======
       <HintPath>C:/Users/s181714/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
@@ -229,6 +232,9 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/s181294/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+>>>>>>> Stashed changes
+=======
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
 >>>>>>> Stashed changes
     </Reference>
     <Reference Include="UnityEngine.AIModule">
@@ -431,6 +437,7 @@
     </Reference>
     <Reference Include="XInputDotNetPure">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <HintPath>C:/Users/s181301/Desktop/GameJamProject/TestGameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
     </Reference>
@@ -456,26 +463,30 @@
       <HintPath>C:/Users/s181301/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
 =======
       <HintPath>C:/Users/s181714/Desktop/GameJamProject/TestGameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
+=======
+      <HintPath>C:/Users/s181311/Desktop/GameJamProject/TestGameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
+>>>>>>> Stashed changes
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/s181714/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/s181311/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="ProBuilderCore">
-      <HintPath>C:/Users/s181714/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
+      <HintPath>C:/Users/s181311/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
     </Reference>
     <Reference Include="ProBuilderMeshOps">
-      <HintPath>C:/Users/s181714/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll</HintPath>
+      <HintPath>C:/Users/s181311/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll</HintPath>
     </Reference>
     <Reference Include="KdTreeLib">
-      <HintPath>C:/Users/s181714/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+      <HintPath>C:/Users/s181311/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
     </Reference>
     <Reference Include="pb_Stl">
-      <HintPath>C:/Users/s181714/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+      <HintPath>C:/Users/s181311/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
     </Reference>
     <Reference Include="Poly2Tri">
-      <HintPath>C:/Users/s181714/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+      <HintPath>C:/Users/s181311/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
+<<<<<<< Updated upstream
       <HintPath>C:/Users/s181714/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
 >>>>>>> master
 =======
@@ -501,6 +512,9 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/s181294/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+>>>>>>> Stashed changes
+=======
+      <HintPath>C:/Users/s181311/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
 >>>>>>> Stashed changes
     </Reference>
     <Reference Include="mscorlib">

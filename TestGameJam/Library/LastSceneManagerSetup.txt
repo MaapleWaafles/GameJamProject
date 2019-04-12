@@ -1,6 +1,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 sceneSetups: []
 =======
@@ -18,6 +19,9 @@ sceneSetups:
 sceneSetups:
 - path: Assets/Scenes/MainScene.unity
 >>>>>>> Stashed changes
+=======
+sceneSetups:
+- path: Assets/Scenes/MainMenu_Drue2.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
->>>>>>> master
